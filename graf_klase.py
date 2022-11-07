@@ -1,8 +1,6 @@
 """ U ovom modulu su klase koje sluze za crtanje, potrebno ih je instancirat, 
 tj. radit objekte. """
 
-from cProfile import label
-from re import S
 import matplotlib.pyplot as plt
 
 """ Klasa Graph sluzi za stvaranje individualnog grafa, ali samo stvaranje,
@@ -72,7 +70,7 @@ class Figure():
         plt.xlabel(self.x_label)    # postavlja x_label na ono definirano u konstrukoru
         plt.ylabel(self.y_label)    # postavlja y_label na ono definirano u konstrukoru
         plt.title(self.title)       # postavlja naslov na ono definirano u konstruktoru
-        if self.legend:     # ako je legen postavljen na True
+        if self.legend:     # ako je legend postavljen na True
             plt.legend()    # pravi legendu
         if self.save:                   # ako je save postavljen na True
             plt.savefig(self.title)     # sprema sliku u png formatu
