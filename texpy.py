@@ -13,5 +13,5 @@ def make_table(data):
     return tbl
 
 # primjer
-dat = pd.read_csv("h1.csv")
-print(make_table(dat))
+"""dat = pd.read_csv("h1.csv")
+print(make_table(dat))"""
