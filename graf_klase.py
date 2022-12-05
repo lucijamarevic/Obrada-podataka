@@ -32,9 +32,9 @@ class Graph():
             plt.scatter(self.x, self.y, c = self.c, s = self.lw)
         else:
             plt.plot(self.x, self.y, c = self.c, lw = self.lw)
-        plt.xlabel = x_label
-        plt.ylabel = y_label
-        plt.title = title
+        plt.xlabel(x_label)
+        plt.ylabel(y_label)
+        plt.title(title)
         if save:
             plt.savefig(title)
         plt.show()
